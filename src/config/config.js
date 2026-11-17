@@ -1,43 +1,3 @@
-// require('dotenv').config();
-
-// const config = {
-//   development: {
-//     username: process.env.DB_USER || 'postgres',
-//     password: process.env.DB_PASSWORD || 'postgres',
-//     database: process.env.DB_NAME || 'portfolio_db',
-//     host: process.env.DB_HOST || '127.0.0.1',
-//     port: Number(process.env.DB_PORT) || 5432,
-//     dialect: 'postgres',
-//     logging: false,
-//     define: {
-//       underscored: false,
-//       timestamps: true
-//     }
-//   },
-//   production: {
-//     username: process.env.DB_USER || 'postgres',
-//     password: process.env.DB_PASSWORD || 'postgres',
-//     database: process.env.DB_NAME || 'portfolio_db',
-//     host: process.env.DB_HOST || '127.0.0.1',
-//     port: Number(process.env.DB_PORT) || 5432,
-//     dialect: 'postgres',
-//     logging: false,
-//     define: {
-//       underscored: false,
-//       timestamps: true
-//     },
-//     dialectOptions: {
-//       ssl: {
-//         require: true,
-//         rejectUnauthorized: false
-//       }
-//     }
-//   }
-// };
-
-// module.exports = config;
-
-
 require('dotenv').config();
 
 const config = {
@@ -58,10 +18,10 @@ const config = {
     use_env_variable: 'DATABASE_URL',
     dialect: 'postgres',
     logging: false,
-    // define: {
-    //   underscored: false,
-    //   timestamps: true
-    // },
+    define: {
+      underscored: false,
+      timestamps: true
+    },
     dialectOptions: {
       ssl: {
         require: true,
