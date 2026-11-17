@@ -4,19 +4,28 @@ const { sequelize } = require('./models');
 const PORT = process.env.PORT || 5000;
 
 const startServer = async () => {
-  try {
-    await sequelize.authenticate();
-    console.log('Database connection successful.');
+  // try {
+  //   await sequelize.authenticate();
+  //   console.log('Database connection successful.');
 
-    app.listen(PORT, () => {
-      console.log(`Server running on port ${PORT}`);
-    });
-  } catch (error) {
-    console.error('Database connection failed:', error.message);
+  //   app.listen(PORT, () => {
+  //     console.log(`Server running on port ${PORT}`);
+  //   });
+  // } catch (error) {
+  //   console.error('Database connection failed:', error.message);
+  //   process.exit(1);
+  // }
+
+
+
+sequelize.authenticate()
+  .then(() => console.log('Database connected successfully!'))
+  .catch(err => {
+    console.error('Full Database error details:', err);
     process.exit(1);
-  }
-};
+  });
 
+  };
 const shutdown = async (signal) => {
   console.log(`Received ${signal}. Shutting down server...`);
 

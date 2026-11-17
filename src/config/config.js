@@ -58,10 +58,10 @@ const config = {
     use_env_variable: 'DATABASE_URL',
     dialect: 'postgres',
     logging: false,
-    define: {
-      underscored: false,
-      timestamps: true
-    },
+    // define: {
+    //   underscored: false,
+    //   timestamps: true
+    // },
     dialectOptions: {
       ssl: {
         require: true,
