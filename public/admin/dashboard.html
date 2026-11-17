@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard | Fistum</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/css/admin.css" />
+  </head>
+  <body class="admin-dashboard">
+    <div class="page-shell">
+      <aside class="sidebar glass" aria-label="Sidebar navigation">
+        <div class="sidebar-brand">
+          <span class="brand-mark">F</span>
+          <div>
+            <p class="eyebrow">Admin</p>
+            <h2>Fistum</h2>
+          </div>
+        </div>
+
+        <nav class="sidebar-nav">
+          <button class="nav-item active" data-section="overview">Overview</button>
+          <button class="nav-item" data-section="projects">Projects</button>
+          <button class="nav-item" data-section="requests">Service Requests</button>
+          <button class="nav-item danger" id="logoutBtn">Logout</button>
+        </nav>
+      </aside>
+
+      <main class="main-panel">
+        <header class="topbar glass">
+          <div>
+            <p class="eyebrow">Dashboard</p>
+            <h1>Portfolio control center</h1>
+          </div>
+          <button class="theme-toggle" aria-label="Toggle color theme">
+            <span class="theme-icon">☀️</span>
+          </button>
+        </header>
+
+        <section class="panel-section active" id="overviewSection">
+          <div class="stats-grid" id="statsGrid"></div>
+        </section>
+
+        <section class="panel-section" id="projectsSection">
+          <div class="section-toolbar">
+            <h2>Projects</h2>
+            <button class="btn btn-primary" id="addProjectBtn">Add Project</button>
+          </div>
+
+          <div class="table-wrap glass">
+            <table>
+              <thead>
+                <tr>
+                  <th>Title</th>
+                  <th>Featured</th>
+                  <th>Order</th>
+                  <th>Actions</th>
+                </tr>
+              </thead>
+              <tbody id="projectsTableBody"></tbody>
+            </table>
+          </div>
+        </section>
+
+        <section class="panel-section" id="requestsSection">
+          <div class="section-toolbar">
+            <h2>Service Requests</h2>
+            <div class="status-tabs" id="requestStatusTabs">
+              <button class="status-tab active" data-status="all">All</button>
+              <button class="status-tab" data-status="new">New</button>
+              <button class="status-tab" data-status="in-review">In Review</button>
+              <button class="status-tab" data-status="accepted">Accepted</button>
+              <button class="status-tab" data-status="rejected">Rejected</button>
+              <button class="status-tab" data-status="completed">Completed</button>
+            </div>
+          </div>
+
+          <div class="table-wrap glass">
+            <table>
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Service</th>
+                  <th>Status</th>
+                  <th>Actions</th>
+                </tr>
+              </thead>
+              <tbody id="requestsTableBody"></tbody>
+            </table>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <div class="modal" id="projectModal" aria-hidden="true">
+      <div class="modal-content glass">
+        <button class="modal-close" aria-label="Close dialog">×</button>
+        <div class="modal-header">
+          <h3 id="projectModalTitle">Add Project</h3>
+        </div>
+
+        <form id="projectForm" enctype="multipart/form-data" novalidate>
+          <div class="field-grid">
+            <label>
+              <span>Title</span>
+              <input type="text" name="title" required />
+            </label>
+            <label>
+              <span>Display Order</span>
+              <input type="number" name="displayOrder" min="0" value="0" />
+            </label>
+          </div>
+
+          <label>
+            <span>Description</span>
+            <textarea name="description" rows="3" required></textarea>
+          </label>
+
+          <label>
+            <span>Long Description</span>
+            <textarea name="longDescription" rows="5" required></textarea>
+          </label>
+
+          <label>
+            <span>Tech Stack</span>
+            <div class="chip-input-wrap">
+              <div class="chip-list" id="techChipList"></div>
+              <input id="techInput" type="text" placeholder="Add a tech tag" />
+            </div>
+          </label>
+
+          <div class="field-grid">
+            <label>
+              <span>Live URL</span>
+              <input type="url" name="liveUrl" placeholder="https://example.com" />
+            </label>
+            <label>
+              <span>Repo URL</span>
+              <input type="url" name="repoUrl" placeholder="https://github.com/yourname/project" />
+            </label>
+          </div>
+
+          <label class="checkbox-row">
+            <input type="checkbox" name="featured" />
+            <span>Featured project</span>
+          </label>
+
+          <label>
+            <span>Project Image</span>
+            <input type="file" name="image" accept="image/png,image/jpeg,image/webp" />
+            <img id="projectImagePreview" class="preview-image hidden" alt="Project preview" />
+          </label>
+
+          <div class="form-actions">
+            <button type="button" class="btn btn-secondary" data-close-modal="projectModal">Cancel</button>
+            <button type="submit" class="btn btn-primary">Save Project</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="modal" id="requestModal" aria-hidden="true">
+      <div class="modal-content glass request-modal-content">
+        <button class="modal-close" aria-label="Close dialog">×</button>
+        <div class="modal-header">
+          <h3>Service Request Details</h3>
+        </div>
+
+        <div id="requestDetailContent" class="request-detail-content"></div>
+      </div>
+    </div>
+
+    <div class="toast-container" aria-live="polite" aria-atomic="true"></div>
+
+    <script src="/js/admin.js"></script>
+  </body>
+</html>

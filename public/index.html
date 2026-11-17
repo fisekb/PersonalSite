@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0b1020" />
+    <meta name="description" content="Fistum is a fullstack developer building reliable web applications, APIs, and data-driven products with Node.js and PostgreSQL." />
+    <meta property="og:title" content="Fistum | Fullstack & Node.js Developer" />
+    <meta property="og:description" content="I build dependable web experiences and backend systems with clean architecture." />
+    <meta property="og:type" content="website" />
+    <title>Fistum | Fullstack &amp; Node.js Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <script src="/js/main.js" defer></script>
+  </head>
+  <body>
+    <div class="page-shell">
+      <div class="bg-orb orb-1" aria-hidden="true"></div>
+      <div class="bg-orb orb-2" aria-hidden="true"></div>
+      <div class="bg-grid" aria-hidden="true"></div>
+
+      <header class="site-header">
+        <div class="container">
+          <nav class="navbar" aria-label="Main navigation">
+            <a class="brand" href="#home" aria-label="Fistum home">
+              <span class="brand-mark">F</span>
+              <span class="brand-name">Fistum<span class="accent-text">.</span></span>
+            </a>
+            <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navMenu">
+              <span></span><span></span><span></span>
+            </button>
+            <div class="nav-menu" id="navMenu">
+              <ul class="nav-links">
+                <li><a class="nav-link" href="#home">Home</a></li>
+                <li><a class="nav-link" href="#services">What I do</a></li>
+                <li><a class="nav-link" href="#projects">Projects</a></li>
+                <li><a class="nav-link" href="#about">About</a></li>
+                <li><a class="nav-link" href="#contact">Contact</a></li>
+              </ul>
+              <div class="nav-actions">
+                <button class="theme-toggle" type="button" aria-label="Toggle light and dark theme"><span class="theme-icon">☀️</span></button>
+                <a class="btn btn-primary btn-small" href="#contact">Let’s talk <span aria-hidden="true">↗</span></a>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+
+      <main>
+        <section class="hero section" id="home">
+          <div class="container hero-grid">
+            <div class="hero-copy reveal">
+              <p class="eyebrow">Fullstack developer · Open to opportunities</p>
+              <h1>I build thoughtful products for the <span class="type-wrap"><span class="typed-text">web</span></span></h1>
+              <p class="lead">I’m Fistum, a fullstack developer focused on Node.js and backend engineering. I turn ideas into useful, dependable web experiences—with clean APIs and data systems behind them.</p>
+              <div class="cta-group">
+                <a class="btn btn-primary" href="#projects">Explore my work <span aria-hidden="true">↓</span></a>
+                <a class="btn btn-secondary" href="#contact">Get in touch</a>
+              </div>
+              <div class="social-row" aria-label="Contact links">
+                <a href="#contact" aria-label="Contact Fistum by form">✉</a>
+                <a href="#projects" aria-label="See selected projects">⌘</a>
+                <span class="hero-note">Building with care, shipping with purpose.</span>
+              </div>
+            </div>
+            <div class="hero-visual reveal">
+              <div class="profile-card glass">
+                <div class="profile-topline"><span class="status-dot"></span> Available for the right opportunity</div>
+                <div class="avatar-wrap">
+                  <img class="hero-portrait" src="/images/profile.jpg" alt="Portrait of Fistum" />
+                </div>
+                <h2 class="profile-title">Engineer-minded.<br />Product-focused.</h2>
+                <p>I care about the details users feel—and the reliable systems they never have to think about.</p>
+                <div class="mini-metrics">
+                  <div><strong>API</strong><span>Design &amp; integration</span></div>
+                  <div><strong>Data</strong><span>PostgreSQL &amp; modeling</span></div>
+                </div>
+                <div class="tech-pill-list" aria-label="Core technologies">
+                  <span>Node.js</span><span>Express</span><span>PostgreSQL</span><span>JavaScript</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="services">
+          <div class="container">
+            <div class="section-head reveal">
+              <p class="eyebrow">How I can help</p>
+              <h2>From first endpoint to finished experience.</h2>
+              <p>I enjoy solving practical problems across the stack, with a special focus on dependable backend foundations.</p>
+            </div>
+            <div class="services-grid">
+              <article class="service-card glass reveal">
+                <div class="service-icon" aria-hidden="true">⌘</div>
+                <h3>Web development</h3>
+                <p>Responsive, accessible web experiences connected to the data and workflows that make them useful.</p>
+                <button class="btn-link service-request-btn" type="button" data-service="web-development">Discuss a website <span aria-hidden="true">→</span></button>
+              </article>
+              <article class="service-card glass reveal">
+                <div class="service-icon" aria-hidden="true">{ }</div>
+                <h3>API development</h3>
+                <p>Versioned REST APIs with clear contracts, validation, authentication, and maintainable structure.</p>
+                <button class="btn-link service-request-btn" type="button" data-service="api-development">Discuss an API <span aria-hidden="true">→</span></button>
+              </article>
+              <article class="service-card glass reveal">
+                <div class="service-icon" aria-hidden="true">▤</div>
+                <h3>Database design</h3>
+                <p>Thoughtful relational models, migrations, and queries designed to keep application data consistent.</p>
+                <button class="btn-link service-request-btn" type="button" data-service="database-design">Discuss data needs <span aria-hidden="true">→</span></button>
+              </article>
+              <article class="service-card glass reveal">
+                <div class="service-icon" aria-hidden="true">↗</div>
+                <h3>Deployment &amp; consulting</h3>
+                <p>Practical guidance to prepare an application for release and make its next steps clear.</p>
+                <button class="btn-link service-request-btn" type="button" data-service="consulting">Let’s talk <span aria-hidden="true">→</span></button>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="projects">
+          <div class="container">
+            <div class="section-head reveal">
+              <p class="eyebrow">Selected work</p>
+              <h2>Projects built to solve real problems.</h2>
+              <p>A few things I’ve been building. Open a project to see more detail, the tools behind it, and links where available.</p>
+            </div>
+            <div class="work-grid" id="projectsGrid" aria-live="polite" aria-label="Portfolio projects">
+              <p class="empty-state">Loading projects…</p>
+            </div>
+            <p class="projects-footnote">Projects are loaded from the portfolio API. More work will appear here as it is published.</p>
+          </div>
+        </section>
+
+        <section class="section" id="about">
+          <div class="container about-grid">
+            <div class="about-photo glass reveal">
+              <img class="about-portrait" src="/images/profile.jpg" alt="Fistum portrait" />
+              <div class="photo-placeholder"><span>Fistum · Developer</span></div>
+            </div>
+            <div class="about-copy reveal">
+              <p class="eyebrow">A little about me</p>
+              <h2>Good software is thoughtful from the inside out.</h2>
+              <p>I’m a developer who enjoys connecting the user-facing experience with robust backend systems. My work centers on JavaScript, Node.js, Express, and PostgreSQL, with attention to the architecture and security that help an application remain dependable.</p>
+              <p>I value clear communication, continuous learning, and building things that are easy for the next person to understand and improve.</p>
+              <div class="skill-panel glass">
+                <h3>Tools I work with</h3>
+                <div class="skill-chips">
+                  <span>Node.js</span><span>Express.js</span><span>PostgreSQL</span><span>Sequelize</span><span>REST APIs</span><span>JWT</span><span>HTML</span><span>CSS</span><span>Vanilla JavaScript</span><span>Git</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="approach">
+          <div class="container">
+            <div class="section-head reveal">
+              <p class="eyebrow">My approach</p>
+              <h2>Clear steps. Careful execution.</h2>
+            </div>
+            <div class="timeline">
+              <article class="timeline-item glass reveal"><span class="step-number">01 / Understand</span><h3>Start with the problem</h3><p>Clarify the goal, the people it serves, and what a useful outcome looks like.</p></article>
+              <article class="timeline-item glass reveal"><span class="step-number">02 / Shape</span><h3>Plan the foundation</h3><p>Choose a straightforward structure for the interface, API, and data model.</p></article>
+              <article class="timeline-item glass reveal"><span class="step-number">03 / Build</span><h3>Ship in focused steps</h3><p>Develop, validate, and connect the pieces while keeping the experience in view.</p></article>
+              <article class="timeline-item glass reveal"><span class="step-number">04 / Improve</span><h3>Learn from feedback</h3><p>Test the result, polish what matters, and make the next improvement intentional.</p></article>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="contact">
+          <div class="container">
+            <div class="section-head reveal">
+              <p class="eyebrow">Have a project in mind?</p>
+              <h2>Let’s make something useful.</h2>
+              <p>Share a little about what you’re looking for. Your message will reach me through this site.</p>
+            </div>
+            <div class="contact-shell glass reveal">
+              <div class="contact-copy">
+                <h3>Start a conversation</h3>
+                <p>Whether you’re hiring, exploring a collaboration, or need help with a web project, I’d be glad to hear from you.</p>
+                <div class="contact-meta">
+                  <span><span class="status-dot"></span> Open to fullstack and Node.js opportunities</span>
+                  <span>Typical topics: APIs, web apps, databases, and deployment</span>
+                </div>
+              </div>
+              <form class="service-form" id="serviceForm" novalidate>
+                <div class="field-row">
+                  <label for="contactName">Your name
+                    <input id="contactName" name="name" type="text" autocomplete="name" minlength="2" maxlength="120" required placeholder="Jane Doe" />
+                    <span class="error-text" aria-live="polite"></span>
+                  </label>
+                  <label for="contactEmail">Email address
+                    <input id="contactEmail" name="email" type="email" autocomplete="email" required placeholder="jane@example.com" />
+                    <span class="error-text" aria-live="polite"></span>
+                  </label>
+                </div>
+                <div class="field-row">
+                  <label for="contactPhone">Phone <span class="optional-text">(optional)</span>
+                    <input id="contactPhone" name="phone" type="tel" autocomplete="tel" placeholder="+1 555 0100" />
+                    <span class="error-text" aria-live="polite"></span>
+                  </label>
+                  <label for="serviceType">What do you need?
+                    <select id="serviceType" name="serviceType" required>
+                      <option value="" disabled selected>Select a service</option>
+                      <option value="web-development">Web development</option>
+                      <option value="api-development">API development</option>
+                      <option value="database-design">Database design</option>
+                      <option value="deployment">Deployment</option>
+                      <option value="consulting">Consulting</option>
+                      <option value="other">Something else</option>
+                    </select>
+                    <span class="error-text" aria-live="polite"></span>
+                  </label>
+                </div>
+                <label for="budgetRange">Budget range <span class="optional-text">(optional)</span>
+                  <input id="budgetRange" name="budgetRange" type="text" maxlength="80" placeholder="e.g. $1,000–$3,000" />
+                  <span class="error-text" aria-live="polite"></span>
+                </label>
+                <label for="contactMessage">Tell me about it
+                  <textarea id="contactMessage" name="message" rows="5" minlength="20" maxlength="2000" required placeholder="A few details about your project, goals, or opportunity…"></textarea>
+                  <span class="error-text" aria-live="polite"></span>
+                </label>
+                <button class="btn btn-primary submit-btn" type="submit"><span class="btn-text">Send message</span><span aria-hidden="true">↗</span></button>
+              </form>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="container footer-inner">
+          <div class="footer-brand"><a class="brand" href="#home"><span class="brand-mark">F</span><span class="brand-name">Fistum<span class="accent-text">.</span></span></a><p class="footer-caption">Building dependable things for the web.</p></div>
+          <div class="footer-links"><a href="#projects">Projects</a><a href="#about">About</a><a href="#contact">Contact</a><a href="/admin/login.html">Admin</a></div>
+          <nav class="footer-contact" aria-label="Contact and social profiles">
+            <a href="https://t.me/fisekb1" target="_blank" rel="noopener noreferrer" aria-label="Telegram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21.5 3.6 18.3 20c-.2 1.2-.9 1.5-1.8.9l-5-3.7-2.4 2.3c-.3.3-.5.5-1 .5l.4-5.1 9.3-8.4c.4-.4-.1-.6-.6-.2L5.7 13.5.8 12c-1.1-.3-1.1-1 .2-1.5L20 3.1c.9-.3 1.7.2 1.5.5Z"/></svg></a>
+            <a href="https://wa.me/251975484888" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 3.5A11.8 11.8 0 0 0 12.1 0C5.6 0 .3 5.3.3 11.8c0 2.1.5 4.1 1.6 5.9L.2 24l6.5-1.7a11.8 11.8 0 0 0 5.4 1.3h.1c6.5 0 11.8-5.3 11.8-11.8 0-3.1-1.2-6-3.5-8.3ZM12.1 21.6c-1.7 0-3.4-.5-4.8-1.3l-.3-.2-3.9 1 1-3.8-.2-.4a9.7 9.7 0 0 1-1.5-5.1c0-5.4 4.4-9.8 9.8-9.8 2.6 0 5.1 1 6.9 2.9a9.7 9.7 0 0 1 2.9 6.9c0 5.4-4.4 9.8-9.8 9.8Zm5.4-7.3c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.2-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.4-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.4.1-.6l.5-.6.3-.5c.1-.2 0-.4 0-.6-.1-.1-.7-1.6-1-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.1 1-1.1 2.5s1.1 2.9 1.3 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.7-.7 1.9-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.4Z"/></svg></a>
+            <a href="tel:+251975484888" aria-label="Call Fistum"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.4 15.4 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1.1-.3 1.2.4 2.5.6 3.8.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.7 21 3 13.3 3 3.7c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.6.6 3.8.1.4 0 .8-.3 1.1l-2.2 2.2Z"/></svg></a>
+            <a href="https://www.linkedin.com/in/fistum-kibre-5a1916289" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.4 2H3.6C2.7 2 2 2.7 2 3.6v16.8c0 .9.7 1.6 1.6 1.6h16.8c.9 0 1.6-.7 1.6-1.6V3.6c0-.9-.7-1.6-1.6-1.6ZM8 18H5V9h3v9ZM6.5 7.8A1.8 1.8 0 1 1 6.5 4.2a1.8 1.8 0 0 1 0 3.6ZM19 18h-3v-4.4c0-1.1 0-2.5-1.5-2.5s-1.8 1.2-1.8 2.4V18h-3V9h2.9v1.2h.1c.4-.7 1.3-1.5 2.8-1.5 3 0 3.5 2 3.5 4.5V18Z"/></svg></a>
+            <a href="https://github.com/fisekb" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .8a11.2 11.2 0 0 0-3.5 21.8c.6.1.8-.3.8-.6v-2.1c-3.1.7-3.8-1.3-3.8-1.3-.5-1.3-1.2-1.6-1.2-1.6-1-.7.1-.7.1-.7 1.1.1 1.7 1.1 1.7 1.1 1 1.7 2.5 1.2 3.1.9.1-.7.4-1.2.7-1.5-2.5-.3-5.1-1.3-5.1-5.6 0-1.2.4-2.2 1.1-3-.1-.3-.5-1.4.1-3 0 0 .9-.3 3.1 1.1a10.7 10.7 0 0 1 5.6 0c2.1-1.4 3.1-1.1 3.1-1.1.6 1.6.2 2.7.1 3 .7.8 1.1 1.8 1.1 3 0 4.3-2.6 5.3-5.1 5.6.4.3.8 1 .8 2v3c0 .3.2.7.8.6A11.2 11.2 0 0 0 12 .8Z"/></svg></a>
+          </nav>
+          <p class="footer-copyright">© <span id="currentYear">2026</span> Fistum. Built with care.</p>
+        </div>
+      </footer>
+
+      <button class="back-to-top" type="button" aria-label="Back to top">↑</button>
+
+      <div class="modal" id="projectModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="projectModalTitle">
+        <div class="modal-content glass">
+          <button class="modal-close" type="button" aria-label="Close project details">×</button>
+          <div class="modal-media"><img id="modalImage" src="/images/projects/ecommerce-api.svg" alt="Project preview" /></div>
+          <div class="modal-body">
+            <span class="modal-badge">Project details</span>
+            <h2 id="projectModalTitle">Project title</h2>
+            <p id="projectModalDescription"></p>
+            <div class="skill-chips" id="modalTechStack"></div>
+            <div class="modal-actions">
+              <a class="btn btn-primary" id="modalLiveLink" href="#" target="_blank" rel="noopener noreferrer">View live</a>
+              <a class="btn btn-secondary" id="modalRepoLink" href="#" target="_blank" rel="noopener noreferrer">View code</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="toast-container" aria-live="polite" aria-atomic="true"></div>
+    </div>
+  </body>
+</html>
